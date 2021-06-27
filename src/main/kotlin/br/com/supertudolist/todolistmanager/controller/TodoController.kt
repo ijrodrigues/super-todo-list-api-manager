@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController
 import java.time.LocalDateTime.now
 
 @RequestMapping("/todos")
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("*")
 @RestController
 class TodoController(private val todoRepository: TodoRepository){
 
